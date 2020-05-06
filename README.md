@@ -18,16 +18,60 @@ interface IUser {
     <li> Avatars are also stored </li>
 </ul>
 
-## Getting Started
-
-Claim your API_KEY Alpha Vantage API_KEY <a href="https://www.alphavantage.co/support/#api-key">here</a>
-Update App.tsx with your API_KEY
-
-### Prerequisites
+## Prerequisites
 
 ```
 Install Node.js first. Built with latest version
 ```
+
+## Reference API
+
+Port exposed as 3000
+
+#### Retrieve all users:
+
+GET localhost:{port}/users
+
+#### Retrieve a specific user:
+
+GET localhost :{port}/users/{user id}
+
+#### Create new user:
+
+POST localhost:{port} /users/{user id}
+
+```
+Content-Type: multipart/form-data
+ firstName: the user first name as string
+ lastName: the user last name as string
+ userName: the username as string
+ password: the user password as string
+ avatar: the user avatar as a file type
+```
+
+#### Update a specific user:
+
+PATCH localhost :{port}/users/{user id}
+
+```
+Content-Type: multipart/form-data
+ firstName: the user first name as string
+ lastName: the user last name as string
+ userName: the username as string
+password: the user password as string
+ avatar: the user avatar as a file type
+```
+
+#### Delete a specific user:
+
+DELETE localhost:3000/users/{user id}
+
+### Description of usual server responses
+
+200 OK – the request was successfully;
+ 201 CREATED – the request was successfully created; 400 BAD REQUEST – the request was not understood;
+ 404 NOT FOUND – the request was not found;
+ 500 SERVER ERROR
 
 ### Installing
 

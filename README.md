@@ -86,7 +86,7 @@ docker run -it -p 3000:3000 secfi-typescript
 
 ## Built With
 
--   [TypeScript](https://www.npmjs.com/package/typescript)
+-   [TypeScript](https://www.npmjs.com/package/typescript) - TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser
 -   [Express](https://expressjs.com/) - Web application server framework
 -   [Bcrypt](https://www.npmjs.com/package/bcrypt) - A library to help you hash passwords
 -   [Mongoose](https://mongoosejs.com/) - Elegant mongodb object modeling for node.js

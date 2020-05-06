@@ -42,11 +42,11 @@ POST localhost:{port} /users/{user id}
 
 ```
 Content-Type: multipart/form-data
- firstName: the user first name as string
- lastName: the user last name as string
- userName: the username as string
- password: the user password as string
- avatar: the user avatar as a file type
+ - firstName: the user first name as string
+ - lastName: the user last name as string
+ - userName: the username as string
+ - password: the user password as string
+ - avatar: the user avatar as a file type
 ```
 
 #### Update a specific user:
@@ -55,11 +55,11 @@ PATCH localhost :{port}/users/{user id}
 
 ```
 Content-Type: multipart/form-data
- firstName: the user first name as string
- lastName: the user last name as string
- userName: the username as string
-password: the user password as string
- avatar: the user avatar as a file type
+ - firstName: the user first name as string
+ - lastName: the user last name as string
+ - userName: the username as string
+ - password: the user password as string
+ - avatar: the user avatar as a file type
 ```
 
 #### Delete a specific user:
@@ -68,10 +68,11 @@ DELETE localhost:3000/users/{user id}
 
 ### Description of usual server responses
 
-200 OK – the request was successfully;
- 201 CREATED – the request was successfully created; 400 BAD REQUEST – the request was not understood;
- 404 NOT FOUND – the request was not found;
- 500 SERVER ERROR
+-   200 OK – the request was successfully;
+-   201 CREATED – the request was successfully created;
+-   400 BAD REQUEST – the request was not understood;
+-   404 NOT FOUND – the request was not found;
+-   500 SERVER ERROR
 
 ### Installing
 
